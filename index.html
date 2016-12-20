@@ -36,16 +36,13 @@
       Open Questions
     </h1>
     <!-- Post -->
-    <div class="post container" ng-repeat="post in view.posts | filter: view.search | orderBy: view.sort: order_by">
+    <div class="post container" ng-repeat="post in view.posts | filter: view.search | orderBy: view.sort: order_by" ng-init="bstyle={'border' : teal'}" ng-style="bstyle1" ng-mouseenter="bstyle1=bstyle">
       <div class="row">
         <div class="col-lg-2">
-          <img src="{{post.image}}" />
+          <img src="{{post.image}}"/>
         </div>
         <div class="col-lg-8">
-            <h5>
-              {{post.title}}
-            </h5>
-          <h5 class="author">{{post.author}}</h5>
+          <h5>{{post.title}} | {{post.author}}</h5>
           <h3 class="description">
             {{post.description}}
           </h3>
@@ -76,7 +73,7 @@
               </ng-pluralize>
             </h5>
             <!-- Button -->
-            <button class="button button-block bbutton" ng-style="style1" ng-mouseenter="style1=style; style2=null">
+            <button class="button button-block bbutton" ng-style="style1" ng-mouseenter="style1=style">
               + Add Answer
             </button>
           </div>

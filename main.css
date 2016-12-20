@@ -31,20 +31,6 @@ img {
   align-self: center;
 }
 
-.titleLine{
-  margin-top: 15px;
-}
-
-.titleLine > h3{
-  display: inline;
-}
-
-.title{
-  border-right: 1px solid lightgrey;
-  margin-right: 15px;
-  padding-right: 5px;
-}
-
 .negative {
   color: red;
 }
