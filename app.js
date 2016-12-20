@@ -56,8 +56,8 @@ app.controller('MainController', function($scope){
     answers: 100,
   };
 
-
   // functions
+
 
   $scope.upVote = function(post){
     post.votes++;
@@ -67,5 +67,13 @@ app.controller('MainController', function($scope){
     post.votes--;
   };
 
+
+  $scope.reset = function(){
+    $scope.view.viewSubmitPost = false;
+    for (var i = 0; i < $scope.view.posts.length; i++) {
+      $scope.view.posts[i].viewComments = false;
+      $scope.view.posts[i].viewSubmitComment = false;
+    }
+  };
 
 });
