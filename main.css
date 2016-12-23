@@ -7,6 +7,10 @@ button:hover {
   background-color: teal;
 }
 
+.post:hover {
+  border-color: teal;
+}
+
 .invalid{
   color: red;
 }
