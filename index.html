@@ -46,7 +46,7 @@
           <h3 class="description">
             {{post.description}}
           </h3>
-          <div class="footer" ng-init="style={'background-color' : 'teal', 'color' : 'black'}">
+          <div class="footer" >
             <!-- Votes -->
             <h5>
               <i class="fa fa-arrow-up cursor" aria-hidden="true" ng-click="upVote(post)"></i>
@@ -73,7 +73,7 @@
               </ng-pluralize>
             </h5>
             <!-- Button -->
-            <button class="button button-block bbutton" ng-style="style1" ng-mouseenter="style1=style; style2=null">
+            <button class="button button-block bbutton">
               + Add Answer
             </button>
           </div>
