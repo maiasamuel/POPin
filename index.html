@@ -39,10 +39,11 @@
     <div class="post container" ng-repeat="post in view.posts | filter: view.search | orderBy: view.sort: order_by">
       <div class="row">
         <div class="col-lg-2">
-          <img src="{{post.image}}" />
+          <img src="popinplaceholder(1).svg" alt="POPin logo"/>
         </div>
         <div class="col-lg-8">
-          <h5>{{post.title}} | {{post.author}}</h5>
+          <h5>{{post.title}} | {{post.author}} | <i class="fa fa-calendar" aria-hidden="true"></i>
+          {{post.date | amCalendar }}</h5>
           <h3 class="description">
             {{post.description}}
           </h3>
@@ -58,11 +59,6 @@
             <!-- Answers -->
             <h5>
               {{post.answers}} Answers
-            </h5>
-            <!-- Date -->
-            <h5>
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              {{post.date | amCalendar }}
             </h5>
             <!-- Comments -->
             <h5 ng-click="toggleComments(post)">
