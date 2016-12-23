@@ -3,8 +3,13 @@
   margin-left: 75px;
 }
 
+button {
+  color: teal;
+}
+
 button:hover {
   background-color: teal;
+  color: white;
 }
 
 .post:hover {
