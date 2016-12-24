@@ -28,7 +28,7 @@ app.controller('MainController', function($scope){
     title: 'Tesla',
     author: 'Jennifer Jones',
     image: 'https://app.popinnow.com/media/images/popin_logo_tall_green.svg',
-    description: 'What should be in our temas Q3 all-hands meeting coming up next Thursday? This is a long example with the maximum character count truncated down to a size that can fit in the view with out looking ridiculous. woop woop.',
+    description:'What should be in our temas Q3 all-hands meeting coming up next Thursday? This is a long example with the maximum character count truncated down to a size that can fit in the view with out looking ridiculous. woop woop.',
     date: Date.parse('2016-12-19T18:59:57.859Z'),
     date2: moment('2016-12-19T18:59:57.859Z').fromNow(),
     comments: [{

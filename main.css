@@ -3,6 +3,10 @@
   margin-left: 75px;
 }
 
+img {
+  margin-right: 0;
+}
+
 button {
   color: #189cbc;
 }
