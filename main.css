@@ -1,19 +1,19 @@
 .top {
-  color: teal;
+  color: #189cbc;
   margin-left: 75px;
 }
 
 button {
-  color: teal;
+  color: #189cbc;
 }
 
 button:hover {
-  background-color: teal;
+  background-color: #189cbc;
   color: white;
 }
 
 .post:hover {
-  border-color: teal;
+  border-color: #189cbc;
 }
 
 .invalid{
