@@ -43,7 +43,7 @@
         </div>
         <div class="col-lg-8">
           <h5>{{post.title}} | {{post.author}} | <i class="fa fa-calendar" aria-hidden="true"></i>
-          {{post.date | amCalendar }} | {{post.date2}}</h5>
+          {{post.date | amCalendar }} | <span ng-class="{'negative': !post.date2.includes('day')}">Ends: {{post.date2}}</span></h5>
           <h3 class="description">
             {{post.description}}
           </h3>
